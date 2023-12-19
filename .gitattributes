@@ -1,8 +1,0 @@
-# KiCad Layout
-*.kicad_pcb linguist-detectable=true
-*.kicad_pcb linguist-documentation=false
-*.kicad_pcb linguist-language=KiCad-Layout
-# KiCad Schematic
-*.kicad_sch linguist-detectable=true
-*.kicad_sch linguist-documentation=false
-*.kicad_sch linguist-language=KiCad-Schematic
