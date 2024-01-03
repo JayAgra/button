@@ -1581,79 +1581,6 @@
         )
       )
     )
-    (symbol "SK6812-E:4960" (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
-      (property "Reference" "LED" (at 20.32 10.16 0)
-        (effects (font (size 1.524 1.524)))
-      )
-      (property "Value" "4960" (at 20.32 7.62 0)
-        (effects (font (size 1.524 1.524)))
-      )
-      (property "Footprint" "4960_ADA" (at 0 0 0)
-        (effects (font (size 1.27 1.27) italic) hide)
-      )
-      (property "Datasheet" "4960" (at 0 0 0)
-        (effects (font (size 1.27 1.27) italic) hide)
-      )
-      (property "ki_locked" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "ki_keywords" "4960" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "4960_ADA" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "4960_0_1"
-        (polyline
-          (pts
-            (xy 7.62 -7.62)
-            (xy 33.02 -7.62)
-          )
-          (stroke (width 0.127) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 7.62 5.08)
-            (xy 7.62 -7.62)
-          )
-          (stroke (width 0.127) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 33.02 -7.62)
-            (xy 33.02 5.08)
-          )
-          (stroke (width 0.127) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 33.02 5.08)
-            (xy 7.62 5.08)
-          )
-          (stroke (width 0.127) (type default))
-          (fill (type none))
-        )
-        (pin power_in line (at 0 0 0) (length 7.62)
-          (name "VDD" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin output line (at 0 -2.54 0) (length 7.62)
-          (name "DOUT" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_out line (at 40.64 -2.54 180) (length 7.62)
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin input line (at 40.64 0 180) (length 7.62)
-          (name "DIN" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
     (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (at 0 -6.35 0)
         (effects (font (size 1.27 1.27)) hide)
@@ -1928,11 +1855,13 @@
   )
 
   (no_connect (at 49.53 120.65) (uuid 0cadd302-c932-47bc-95fe-24299ac7eedc))
+  (no_connect (at 156.21 101.6) (uuid 1d88f219-f65c-4399-8aaa-4809b21a1209))
   (no_connect (at 80.01 138.43) (uuid 416347c7-bcec-447e-86e1-dc61d56f8fda))
   (no_connect (at 229.87 142.24) (uuid 742cfe5c-41c6-49ba-8051-9b06962eb5e3))
   (no_connect (at 49.53 115.57) (uuid 7effd39f-e327-4daf-a88d-3c8ff474feca))
   (no_connect (at 49.53 125.73) (uuid 8c7fd0a0-41ec-44ac-8273-7d64e529638f))
   (no_connect (at 80.01 125.73) (uuid aebf30b3-41d1-4441-a0e5-65173ecb904d))
+  (no_connect (at 156.21 58.42) (uuid c3a43d34-a520-4ae6-8c16-a4b52b92d028))
   (no_connect (at 49.53 118.11) (uuid c9a34475-3d0b-4a2f-86be-334a0d0d4d80))
   (no_connect (at 49.53 113.03) (uuid d03299e6-845a-492d-bef8-c228b9c50280))
   (no_connect (at 49.53 123.19) (uuid d3e050df-0897-42c3-9651-75732dc53c1d))
@@ -2051,10 +1980,6 @@
     (stroke (width 0) (type default))
     (uuid 39f1316a-9510-4304-99bc-3ab5198dea24)
   )
-  (wire (pts (xy 185.42 58.42) (xy 198.12 58.42))
-    (stroke (width 0) (type default))
-    (uuid 3a29e227-dbb7-4b32-b49d-68f4d20a5538)
-  )
   (wire (pts (xy 140.97 146.05) (xy 139.7 146.05))
     (stroke (width 0) (type default))
     (uuid 3cb9bf41-bc79-445d-9bc7-bcd43c1bf399)
@@ -2074,10 +1999,6 @@
   (wire (pts (xy 262.89 127) (xy 269.24 127))
     (stroke (width 0) (type default))
     (uuid 3fc8f644-364f-4906-a580-e84ffadd5ab7)
-  )
-  (wire (pts (xy 208.28 101.6) (xy 214.63 101.6))
-    (stroke (width 0) (type default))
-    (uuid 41d9d277-a669-4c2f-9039-3dfcee91a524)
   )
   (wire (pts (xy 242.57 19.05) (xy 248.92 19.05))
     (stroke (width 0) (type default))
@@ -2114,10 +2035,6 @@
   (wire (pts (xy 19.05 60.96) (xy 19.05 85.09))
     (stroke (width 0) (type default))
     (uuid 506f5a46-67fc-4911-8b51-76198f4bd368)
-  )
-  (wire (pts (xy 156.21 101.6) (xy 177.8 101.6))
-    (stroke (width 0) (type default))
-    (uuid 5086c23f-acbd-4d41-9b3e-850f96bd57e4)
   )
   (wire (pts (xy 26.67 140.97) (xy 26.67 149.86))
     (stroke (width 0) (type default))
@@ -2243,10 +2160,6 @@
     (stroke (width 0) (type default))
     (uuid 85344a75-c8a3-4dfb-8094-236626583af4)
   )
-  (wire (pts (xy 156.21 58.42) (xy 177.8 58.42))
-    (stroke (width 0) (type default))
-    (uuid 86680f4b-01c2-4e3c-8fcf-308143a94dec)
-  )
   (wire (pts (xy 119.38 99.06) (xy 125.73 99.06))
     (stroke (width 0) (type default))
     (uuid 88181501-574a-4cf3-b6ba-4d8417db86dc)
@@ -2282,10 +2195,6 @@
   (wire (pts (xy 149.86 33.02) (xy 165.1 33.02))
     (stroke (width 0) (type default))
     (uuid 9105d86f-f744-4441-8f4a-9f73f413b1c1)
-  )
-  (wire (pts (xy 208.28 58.42) (xy 214.63 58.42))
-    (stroke (width 0) (type default))
-    (uuid 9219835f-6fc1-4cf1-9857-7c86645ca9db)
   )
   (wire (pts (xy 273.05 34.29) (xy 273.05 35.56))
     (stroke (width 0) (type default))
@@ -2411,10 +2320,6 @@
     (stroke (width 0) (type default))
     (uuid cc28ff69-e4f6-442a-8c90-308128536cda)
   )
-  (wire (pts (xy 185.42 101.6) (xy 198.12 101.6))
-    (stroke (width 0) (type default))
-    (uuid cc2d3a9f-74a8-4093-89cb-ea5ce06d0e68)
-  )
   (wire (pts (xy 19.05 181.61) (xy 19.05 193.04))
     (stroke (width 0) (type default))
     (uuid cd9685a9-9c37-4a5d-b3dc-39b1c0859fba)
@@ -2532,7 +2437,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid c71c4b30-e429-43f6-819b-c834c578663b)
   )
-  (text "row: PD0\ncolumn: PD1\n\n\n\nled: PD4" (at 165.1 100.33 0)
+  (text "row: PD0\ncolumn: PD1" (at 165.1 91.44 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid ee68f346-8fe1-448b-940a-fd2984d33e21)
   )
@@ -2684,10 +2589,10 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "D4" (shape input) (at 118.11 184.15 0) (fields_autoplaced)
+  (global_label "D4" (shape input) (at 77.47 186.69 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 9d78a941-f0af-4838-9f10-b47eeba863a1)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 123.4953 184.15 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 82.8553 186.69 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -2801,7 +2706,7 @@
     (pin "1" (uuid 789f825c-5cbe-4c86-be59-cb1db74a9765))
     (pin "2" (uuid 71fe0dc1-3a5d-4f7d-acc4-c940a31e7054))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "J2") (unit 1)
         )
@@ -2827,7 +2732,7 @@
     (pin "1" (uuid 038a74c8-038c-43a9-be82-22253b9bcafa))
     (pin "2" (uuid ac514fa0-f8db-419f-856b-95e2c0ed2efe))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "C10") (unit 1)
         )
@@ -2852,7 +2757,7 @@
     )
     (pin "1" (uuid 7253594b-b0d5-409d-a985-fe293534412f))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "#PWR024") (unit 1)
         )
@@ -2880,7 +2785,7 @@
     (pin "3" (uuid 4d50e3de-6a09-432f-ab2c-1ef080ee3aef))
     (pin "4" (uuid d6ed5652-8920-4e0f-91eb-e97289db2af1))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "D7") (unit 1)
         )
@@ -2905,7 +2810,7 @@
     )
     (pin "1" (uuid f31a28a6-5952-46a3-8554-2f4225837f6f))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "#PWR035") (unit 1)
         )
@@ -2930,35 +2835,9 @@
     )
     (pin "1" (uuid 64e1c7eb-d4bd-4e59-b7be-6e60ebbc9376))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "#PWR09") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "2023-12-05_05-19-35:LTST-C191KSKT") (at 208.28 58.42 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 15c405ee-93db-4216-948a-5bcfa3316a46)
-    (property "Reference" "LED1" (at 201.93 52.07 0)
-      (effects (font (size 1.524 1.524)))
-    )
-    (property "Value" "LTST-C191KSKT" (at 201.93 54.61 0)
-      (effects (font (size 1.524 1.524)))
-    )
-    (property "Footprint" "footprints:LED_LTST-C191KRKT_LTO" (at 208.28 58.42 0)
-      (effects (font (size 1.27 1.27) italic) hide)
-    )
-    (property "Datasheet" "LTST-C191KSKT" (at 208.28 58.42 0)
-      (effects (font (size 1.27 1.27) italic) hide)
-    )
-    (pin "1" (uuid a8e2cbd0-a91d-4650-8009-c2e9c2651099))
-    (pin "2" (uuid edbc36c6-4868-4f51-a40c-2761720a0f56))
-    (instances
-      (project "extinction_button"
-        (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
-          (reference "LED1") (unit 1)
         )
       )
     )
@@ -2982,60 +2861,9 @@
     (pin "1" (uuid 2fedacff-624f-4b4e-959a-1f98ad664c59))
     (pin "2" (uuid ff3a69d3-4fcf-44af-b25d-2811bd61e52d))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "R8") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 181.61 101.6 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 168a99f8-ec02-4b4c-b239-71d940b295c7)
-    (property "Reference" "R5" (at 181.61 96.52 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "330" (at 181.61 99.06 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 181.61 103.378 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 181.61 101.6 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid a38908a8-fdb7-4053-97e1-49553cb77998))
-    (pin "2" (uuid 52521478-ed79-49df-ac81-afd9b46dceeb))
-    (instances
-      (project "extinction_button"
-        (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
-          (reference "R5") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 118.11 186.69 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 199c02b5-c89b-45fa-a08c-e0edd1838a50)
-    (property "Reference" "#PWR032" (at 118.11 193.04 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 118.11 191.77 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 118.11 186.69 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 118.11 186.69 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid fb381af8-a30b-4140-8e29-98ec39224966))
-    (instances
-      (project "extinction_button"
-        (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
-          (reference "#PWR032") (unit 1)
         )
       )
     )
@@ -3059,7 +2887,7 @@
     (pin "1" (uuid 6da7ae98-88de-436a-bf5e-4f7731d19608))
     (pin "2" (uuid 75a6c29b-fd78-4e46-8d10-ac6e32bf2ba3))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "CR1") (unit 1)
         )
@@ -3087,7 +2915,7 @@
     (pin "3" (uuid 1b2e5cd9-bbdb-420c-a939-ddd51951887a))
     (pin "4" (uuid 7af53a20-ef78-4770-ada7-c2e58e1d525e))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "D6") (unit 1)
         )
@@ -3155,7 +2983,7 @@
     (pin "8" (uuid 47ec66aa-fc86-43fb-bf18-093341fb6873))
     (pin "9" (uuid 8f5e805c-c921-49e7-b6a0-806e03e1ad92))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "U1") (unit 1)
         )
@@ -3184,7 +3012,7 @@
     (pin "4" (uuid 927021c6-53fb-4870-a1fa-a8ab3ef58688))
     (pin "5" (uuid 3ab5408e-480c-4938-86da-24bddfad8cd2))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "U2") (unit 1)
         )
@@ -3209,7 +3037,7 @@
     )
     (pin "1" (uuid 7938281c-675b-4b6c-99cc-6f56f35de0ff))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "#PWR018") (unit 1)
         )
@@ -3234,7 +3062,7 @@
     )
     (pin "1" (uuid ef336432-6c01-4f4c-9998-bc2b47f09de2))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "#PWR028") (unit 1)
         )
@@ -3259,7 +3087,7 @@
     )
     (pin "1" (uuid bc3a21ce-3866-40b2-b123-c0605845799c))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "#PWR03") (unit 1)
         )
@@ -3284,7 +3112,7 @@
     )
     (pin "1" (uuid 33e913d5-776d-44eb-9614-5b8dd08ca8dc))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "#PWR034") (unit 1)
         )
@@ -3309,7 +3137,7 @@
     )
     (pin "1" (uuid 60ed307e-90e4-4a67-8ec4-757c52fb949b))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "#PWR036") (unit 1)
         )
@@ -3334,7 +3162,7 @@
     )
     (pin "1" (uuid 60a18400-7cf5-49fb-860c-6b74a677196c))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "#PWR01") (unit 1)
         )
@@ -3362,7 +3190,7 @@
     (pin "3" (uuid 4de28990-8999-45cc-8df2-cc8e150cb14f))
     (pin "4" (uuid fbb76083-4074-4d43-888b-902ad746b54a))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "D4") (unit 1)
         )
@@ -3390,7 +3218,7 @@
     (pin "B1" (uuid 72d7db3f-365e-4f1b-b470-10653cc817f5))
     (pin "B2" (uuid 50c0ad08-f3ee-4fa0-99a2-e31a30983a15))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "SW1") (unit 1)
         )
@@ -3416,7 +3244,7 @@
     (pin "1" (uuid b8b2f516-f05f-48a8-9a6f-42682deb7f41))
     (pin "2" (uuid f4f9669b-4f19-4dc2-92fe-3037bc3092c8))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "C6") (unit 1)
         )
@@ -3470,7 +3298,7 @@
     (pin "S5" (uuid 050f1fc4-7625-4068-88ed-322149774973))
     (pin "S6" (uuid 2399e092-17f1-41ad-a561-05eb497e10b9))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "J1") (unit 1)
         )
@@ -3496,34 +3324,9 @@
     (pin "1" (uuid 48d5c732-e51a-4d5c-8964-f6a8d309dd46))
     (pin "2" (uuid 891d3a91-2e01-4b55-99b2-fe503c92a19d))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "C11") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:VCC") (at 77.47 184.15 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 5dbaa59e-1652-4a91-97ad-3b81ea85436a)
-    (property "Reference" "#PWR029" (at 81.28 184.15 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "VCC" (at 73.66 184.785 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 77.47 184.15 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 77.47 184.15 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 925ee1c9-9f95-4e7c-91f8-f87f4ea28008))
-    (instances
-      (project "extinction_button"
-        (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
-          (reference "#PWR029") (unit 1)
         )
       )
     )
@@ -3547,7 +3350,7 @@
     (pin "1" (uuid ee60195f-852c-415c-a7eb-1a56e0638b79))
     (pin "2" (uuid 09ec5f75-9120-402f-92f4-bde3bc3369fa))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "C9") (unit 1)
         )
@@ -3573,7 +3376,7 @@
     (pin "1" (uuid ecceac11-c981-46b7-9e2b-83204372af6c))
     (pin "2" (uuid 30c423bc-2353-473f-8f96-948cdf83b78c))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "R1") (unit 1)
         )
@@ -3598,7 +3401,7 @@
     )
     (pin "1" (uuid d3777326-1e24-4bf4-86e3-c73557bf5ae1))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "#PWR022") (unit 1)
         )
@@ -3624,7 +3427,7 @@
     (pin "1" (uuid 470cd1db-4862-4227-bc2d-dc83ce884c5c))
     (pin "2" (uuid 0120cea6-2ed2-47b1-aa8e-a179ac6ad37c))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "C1") (unit 1)
         )
@@ -3649,7 +3452,7 @@
     )
     (pin "1" (uuid 87ad8b3d-e434-4972-baf2-85808e46b5ba))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "#PWR020") (unit 1)
         )
@@ -3674,7 +3477,7 @@
     )
     (pin "1" (uuid 8111c57c-c7dc-458b-8152-f43de4e02d6d))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "#PWR08") (unit 1)
         )
@@ -3699,34 +3502,9 @@
     )
     (pin "1" (uuid b94aef9e-807c-4ad9-98a6-d69a8c50d5b9))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "#PWR025") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:VCC") (at 214.63 101.6 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 6aa4fea4-e54c-493c-93f8-ef614eebc551)
-    (property "Reference" "#PWR012" (at 210.82 101.6 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "VCC" (at 218.44 102.235 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 214.63 101.6 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 214.63 101.6 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 4a110d6b-5279-44d4-866c-96fab6260b87))
-    (instances
-      (project "extinction_button"
-        (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
-          (reference "#PWR012") (unit 1)
         )
       )
     )
@@ -3749,7 +3527,7 @@
     )
     (pin "1" (uuid 30c7b290-2191-42c4-bc45-bfc216b7b681))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "#PWR02") (unit 1)
         )
@@ -3777,7 +3555,7 @@
     (pin "3" (uuid e0c1bd6d-19c3-4b67-9346-4b4da05052bb))
     (pin "4" (uuid 6cf1c828-453b-4479-a4a2-cd5badbd54eb))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "D8") (unit 1)
         )
@@ -3803,7 +3581,7 @@
     (pin "1" (uuid 85568efa-c63f-4e8e-806a-d2514f4ce17a))
     (pin "2" (uuid 12646626-a68d-4982-a665-b7424d118ef5))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "C5") (unit 1)
         )
@@ -3829,7 +3607,7 @@
     (pin "1" (uuid 2f76f37f-2365-487c-9d45-3b128b434366))
     (pin "2" (uuid 2c789164-a3a7-45d4-97c8-0e74e158e003))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "C7") (unit 1)
         )
@@ -3854,7 +3632,7 @@
     )
     (pin "1" (uuid 97a34e41-eeb8-4a1e-a2fe-75a29e9698b7))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "#PWR015") (unit 1)
         )
@@ -3879,7 +3657,7 @@
     )
     (pin "1" (uuid 1b0dfa8d-a6cd-49d1-bea0-5ade64f3bde4))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "#PWR031") (unit 1)
         )
@@ -3905,7 +3683,7 @@
     (pin "1" (uuid 8d2fc25e-f68c-4f36-999d-867d616e31e1))
     (pin "2" (uuid 9f83238b-7f8b-4839-be52-45623d09b46a))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "LED3") (unit 1)
         )
@@ -3930,7 +3708,7 @@
     )
     (pin "1" (uuid 65cfcb2f-e02b-46ac-be63-3533f004df73))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "#PWR05") (unit 1)
         )
@@ -3956,34 +3734,9 @@
     (pin "1" (uuid 9a1ceb66-d75b-49b0-b2f4-e95e1736c7d6))
     (pin "2" (uuid 9c933b5a-98c9-428e-a6f2-9eb6d49f17bd))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "U3") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:VCC") (at 214.63 58.42 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 7a4dd640-a928-4c0f-9e2a-c9c95858b108)
-    (property "Reference" "#PWR04" (at 210.82 58.42 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "VCC" (at 218.44 59.055 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 214.63 58.42 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 214.63 58.42 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid fd9daba9-e159-4b37-8e94-55ef8851139b))
-    (instances
-      (project "extinction_button"
-        (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
-          (reference "#PWR04") (unit 1)
         )
       )
     )
@@ -4006,7 +3759,7 @@
     )
     (pin "1" (uuid d3ef5313-9bfb-432f-b0fa-d946f118933a))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "#PWR021") (unit 1)
         )
@@ -4031,7 +3784,7 @@
     )
     (pin "1" (uuid ac004396-8995-4c46-96f7-c46af0d436e8))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "#PWR030") (unit 1)
         )
@@ -4056,7 +3809,7 @@
     )
     (pin "1" (uuid 973dacaa-27d9-4c7d-9716-ab2851779757))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "#PWR07") (unit 1)
         )
@@ -4082,7 +3835,7 @@
     (pin "1" (uuid 8c6fb8b2-ce85-46c6-b9eb-7c7c87175bc6))
     (pin "2" (uuid 9b7651f5-a360-4ac9-a29b-c4a190b956c1))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "R9") (unit 1)
         )
@@ -4107,7 +3860,7 @@
     )
     (pin "1" (uuid cca0def2-bef7-4d07-bfae-5e6abc86c32d))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "#PWR019") (unit 1)
         )
@@ -4159,7 +3912,7 @@
     (pin "3" (uuid ddeba602-4479-403f-b42e-f44dd460ed30))
     (pin "4" (uuid e4eca8d3-82e6-45e5-84a8-986813b66264))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "Y1") (unit 1)
         )
@@ -4185,7 +3938,7 @@
     (pin "1" (uuid 6e3c98aa-7694-440a-b09e-92f03a60ffc8))
     (pin "2" (uuid bdc571c1-3e11-4539-83bc-6157d931781d))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "C12") (unit 1)
         )
@@ -4213,7 +3966,7 @@
     (pin "3" (uuid e373bcc3-3a24-49b1-be96-4fc7bd9eacd6))
     (pin "4" (uuid a6d71d44-1e8f-4f70-82ca-1205b726a78d))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "D1") (unit 1)
         )
@@ -4239,35 +3992,9 @@
     (pin "1" (uuid 6077041c-1b1f-4631-ba32-3e1a0db9579b))
     (pin "2" (uuid fc7df3af-3058-434e-b5b8-31c0f4a4bdfc))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "R2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "2023-12-05_05-19-35:LTST-C191KSKT") (at 208.28 101.6 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid a4977830-1834-4c87-8356-3ad4c37c72cc)
-    (property "Reference" "LED2" (at 201.93 95.25 0)
-      (effects (font (size 1.524 1.524)))
-    )
-    (property "Value" "LTST-C191KSKT" (at 201.93 97.79 0)
-      (effects (font (size 1.524 1.524)))
-    )
-    (property "Footprint" "footprints:LED_LTST-C191KRKT_LTO" (at 208.28 101.6 0)
-      (effects (font (size 1.27 1.27) italic) hide)
-    )
-    (property "Datasheet" "LTST-C191KSKT" (at 208.28 101.6 0)
-      (effects (font (size 1.27 1.27) italic) hide)
-    )
-    (pin "1" (uuid 56848206-8497-4762-bfbc-c49b064a5745))
-    (pin "2" (uuid a5a7fc87-39d2-41ee-b9b7-279593ff9c5f))
-    (instances
-      (project "extinction_button"
-        (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
-          (reference "LED2") (unit 1)
         )
       )
     )
@@ -4291,7 +4018,7 @@
     (pin "1" (uuid 704093fe-82ec-49af-9cdc-a3e995445477))
     (pin "2" (uuid 74262d97-516d-438f-9fa2-029a8007e6a2))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "C3") (unit 1)
         )
@@ -4317,7 +4044,7 @@
     (pin "1" (uuid 0446c1dd-2ac5-4bc6-9ce7-3c7b85cd05a2))
     (pin "2" (uuid c245d380-4c79-4b3e-af45-16e43854a458))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "R6") (unit 1)
         )
@@ -4343,7 +4070,7 @@
     (pin "1" (uuid c1a74de8-6ceb-4cc6-8602-01a20320428c))
     (pin "2" (uuid e7e0ca94-604c-49a3-8de0-8fa63faf6eca))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "C2") (unit 1)
         )
@@ -4368,7 +4095,7 @@
     )
     (pin "1" (uuid 3a3016c0-0899-4602-a0b8-c4f4ffce8e3b))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "#PWR014") (unit 1)
         )
@@ -4393,7 +4120,7 @@
     )
     (pin "1" (uuid 860145f7-fb42-4277-a5dd-a0d35d8b63df))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "#PWR027") (unit 1)
         )
@@ -4421,7 +4148,7 @@
     (pin "3" (uuid 05f33763-6c53-4e35-a120-207c48e82721))
     (pin "4" (uuid 904e4a78-1a1b-49b3-b415-905766711b79))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "D5") (unit 1)
         )
@@ -4449,7 +4176,7 @@
     (pin "3" (uuid 8f70768f-04b0-4486-9d93-9e9248141c7a))
     (pin "4" (uuid a87e1849-e8d4-486d-9876-037389db5cf5))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "D3") (unit 1)
         )
@@ -4475,7 +4202,7 @@
     (pin "1" (uuid 358c86c4-ebff-44eb-aa19-72807f16539a))
     (pin "2" (uuid bb9d7863-7b6d-4e79-911b-34dfb26869f1))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "C8") (unit 1)
         )
@@ -4500,7 +4227,7 @@
     )
     (pin "1" (uuid 5a12e1db-31eb-44ec-ad36-ed1491cbb0ff))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "#PWR026") (unit 1)
         )
@@ -4526,7 +4253,7 @@
     (pin "1" (uuid 83419f5e-0c47-4264-8f5d-585313c4af53))
     (pin "2" (uuid 2f6b53a7-f9be-4c07-8c67-4fd7463db98b))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "R3") (unit 1)
         )
@@ -4551,7 +4278,7 @@
     )
     (pin "1" (uuid c22e866c-19fc-41d0-a3cc-ecce8c3e5d89))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "#PWR016") (unit 1)
         )
@@ -4577,7 +4304,7 @@
     (pin "1" (uuid 38b9931d-1564-40c8-8dfd-a7afa19e3404))
     (pin "2" (uuid 7635c554-0a48-4cfc-b143-7111e9c7085b))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "R7") (unit 1)
         )
@@ -4602,7 +4329,7 @@
     )
     (pin "1" (uuid 328d094b-9982-4c43-9f76-6f53657fa998))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "#PWR06") (unit 1)
         )
@@ -4628,7 +4355,7 @@
     (pin "1" (uuid 1b053e31-9181-4f1f-9d4f-c7e858e7fc31))
     (pin "2" (uuid 5007a81b-f860-4c2d-94d6-b4329c9e4f06))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "C15") (unit 1)
         )
@@ -4654,7 +4381,7 @@
     (pin "1" (uuid e2aa328c-136e-4d21-ad45-10ec72f352ce))
     (pin "2" (uuid 945ed0a4-bf11-4356-b6ec-30c1d7bfb7a6))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "C14") (unit 1)
         )
@@ -4679,35 +4406,9 @@
     )
     (pin "1" (uuid 67401a3e-c0ff-4735-85b6-0bc006c0c942))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "#PWR033") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 181.61 58.42 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid cb823119-b004-4497-8d43-0451c85e1fec)
-    (property "Reference" "R4" (at 181.61 53.34 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "330" (at 181.61 55.88 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 181.61 60.198 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 181.61 58.42 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid f1a07cd4-4cdc-41e2-b18c-98eb6d2608b4))
-    (pin "2" (uuid 4f87a8c5-10cd-4a40-a218-e0f5beb3429a))
-    (instances
-      (project "extinction_button"
-        (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
-          (reference "R4") (unit 1)
         )
       )
     )
@@ -4731,7 +4432,7 @@
     (pin "1" (uuid 0a1f18c0-acd7-4568-a8eb-cf8b4ce60a57))
     (pin "2" (uuid 9c270306-11bc-4a0f-b054-cce50a7b5c6a))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "C13") (unit 1)
         )
@@ -4769,7 +4470,7 @@
     (pin "1" (uuid 2d43f23f-4775-4eee-b316-709d6306022b))
     (pin "2" (uuid b5a77a83-a637-4c0f-bf93-51b725993e87))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "F1") (unit 1)
         )
@@ -4794,37 +4495,9 @@
     )
     (pin "1" (uuid c47e2727-1c4a-40a4-8a20-033c2ac59dea))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "#PWR013") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "SK6812-E:4960") (at 77.47 184.15 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid da79ec3f-38b6-49e0-8d34-78c3d1176052)
-    (property "Reference" "LED4" (at 97.79 175.26 0)
-      (effects (font (size 1.524 1.524)))
-    )
-    (property "Value" "4960" (at 97.79 177.8 0)
-      (effects (font (size 1.524 1.524)))
-    )
-    (property "Footprint" "4960_ADA" (at 77.47 184.15 0)
-      (effects (font (size 1.27 1.27) italic) hide)
-    )
-    (property "Datasheet" "4960" (at 77.47 184.15 0)
-      (effects (font (size 1.27 1.27) italic) hide)
-    )
-    (pin "1" (uuid e7ce7db2-26fc-4ac9-a4d4-59ffbbb76ed2))
-    (pin "2" (uuid 0c46c6cf-f934-4d49-b2db-a1cecbddfc00))
-    (pin "3" (uuid c2e343ee-ab1c-4991-af4f-15e1d38493f7))
-    (pin "4" (uuid 90ea18c8-7c3b-42a8-8358-0133062c4f87))
-    (instances
-      (project "extinction_button"
-        (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
-          (reference "LED4") (unit 1)
         )
       )
     )
@@ -4847,7 +4520,7 @@
     )
     (pin "1" (uuid 9bc7c2fc-470b-492a-a8eb-b94c055fa0b1))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "#PWR017") (unit 1)
         )
@@ -4872,7 +4545,7 @@
     )
     (pin "1" (uuid b4be7f39-00a7-4f24-9b4f-6f7cda91dd96))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "#PWR011") (unit 1)
         )
@@ -4897,7 +4570,7 @@
     )
     (pin "1" (uuid 1ccab534-b52d-4435-a527-2408188df472))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "#PWR023") (unit 1)
         )
@@ -4922,7 +4595,7 @@
     )
     (pin "1" (uuid 5fdffcfc-351e-465b-97a8-6c848b7ea922))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "#PWR010") (unit 1)
         )
@@ -4947,7 +4620,7 @@
     )
     (pin "1" (uuid 6f4528b2-ce2c-4f40-9543-3973e57c66bf))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "#PWR038") (unit 1)
         )
@@ -4973,7 +4646,7 @@
     (pin "1" (uuid 703d8125-bb3b-4a68-8cc7-b4c4fe1930ea))
     (pin "2" (uuid 94dcbfc1-63e1-4932-bbe2-38e604b51873))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "C4") (unit 1)
         )
@@ -5003,7 +4676,7 @@
     (pin "5" (uuid 749e0bf4-333d-444c-a394-1022d8ad5b6d))
     (pin "6" (uuid 8766cd48-f5c4-4193-a726-cc6dddf44fc2))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "J3") (unit 1)
         )
@@ -5031,7 +4704,7 @@
     (pin "3" (uuid b63d7d3e-dbb7-4218-9db2-298bce361dad))
     (pin "4" (uuid 280eb532-ceb6-42de-ad2d-5b8626f7eff9))
     (instances
-      (project "extinction_button"
+      (project "one_button"
         (path "/75cb2e7a-8753-411c-b908-e92f00f7dd6c"
           (reference "D2") (unit 1)
         )
